@@ -1,0 +1,19 @@
+path: wordpress
+color: auto
+apache_modules:
+  - mod_rewrite
+
+rewrite structure:
+  /%year%/%monthnum%/%postname%
+
+language core is-installed:
+  en_US
+language core install:
+  en_US
+language theme install:
+  en_US
+language plugin install:
+  en_US
+site switch-language:
+  en_US
+

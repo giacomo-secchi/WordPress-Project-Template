@@ -1,0 +1,26 @@
+url: mysite.lndo.site
+core install:
+  title: Test
+  admin_user: supervisor
+  admin_password: strongpassword
+  admin_email: info@example.com
+
+# Subcommand defaults (e.g. `wp config create`)
+theme is-active:
+  custom-theme
+theme activate:
+  custom-theme
+
+@staging:
+    ssh: user@ipaddressordomain:port/path/to/website/folder/public_html
+
+@production:
+    ssh: user@ipaddressordomain:port/path/to/website/folder/public_html
+
+_:
+    # Merge subcommand defaults from the upstream config.yml, instead of overriding
+    merge: true
+    # Inherit configuration from an arbitrary YAML file
+    inherit: wp-cli.yml
+
+ 

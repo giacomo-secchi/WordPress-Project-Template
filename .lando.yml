@@ -1,0 +1,38 @@
+name: personal-blog
+recipe: wordpress
+config:
+  php: '7.4'
+  composer_version: '1.10.21'
+  via: apache:2.4
+  database: mysql:5.7
+  config:
+    php: config/php.ini
+excludes:
+  - vendor
+  # - wordpress
+  - wp-content/plugins
+  # - wp-content/themes/custom-theme/node_modules
+services:
+  appserver:
+    build:
+      - chmod -R +x ./scripts 
+      - ./scripts/before_boot.sh
+      - composer install
+    run:
+      - ./scripts/after_boot.sh
+    overrides:
+      volumes:
+       - ~/.composer:/var/www/.composer
+  node: 
+    type: node
+    ssl: true
+    overrides:
+      environment:
+        SHELL: /bin/bash
+    # run:
+    #   - cd $LANDO_MOUNT/wp-content/themes/custom-theme && npm install && npm start
+tooling:
+  npm:
+    service: node
+  node:
+    service: node

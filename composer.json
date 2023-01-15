@@ -1,0 +1,64 @@
+{
+    "name": "www-data/app",
+    "description": "My brilliant WordPress site",
+    "license": "MIT",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://wpackagist.org",
+            "only": [
+                "wpackagist-plugin/*",
+                "wpackagist-theme/*"
+            ]
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "yoast/wordpress-seo-premium",
+                "version": "19.7",
+                "dist": {
+                    "url": "wp-content/artifact/wordpress-seo-premium_v19.7n.zip",
+                    "type": "zip"
+                },
+                "type": "wordpress-plugin"
+            }
+        }
+    ],
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "johnpbloch/wordpress-core-installer": true,
+            "composer/installers": true
+        }
+    },
+    "authors": [
+        {
+            "name": "Giacomo Secchi",
+            "email": "giacomosecchi@gmail.com"
+        }
+    ],
+    "require": {
+        "johnpbloch/wordpress": "^6.1",
+        "vlucas/phpdotenv": "^5.4",
+        "wpackagist-plugin/akismet": "^5.0",
+        "wpackagist-plugin/contact-form-7": "^5.7",
+        "wpackagist-plugin/duracelltomi-google-tag-manager": "^1.16",
+        "wpackagist-plugin/jetpack": "^11.7",
+        "wpackagist-plugin/jetpack-boost": "^1.6",
+        "wpackagist-plugin/mailin": "^3.1",
+        "wpackagist-plugin/redirection": "^5.3",
+        "wpackagist-plugin/wordpress-seo": "^19.14",
+        "wpackagist-theme/twentytwentythree": "^1.0"
+    },
+    "extra": {
+        "wordpress-install-dir": "wordpress",
+        "installer-paths": {
+            "wp-content/plugins/{$name}/": [
+                "type:wordpress-plugin"
+            ],
+            "wp-content/themes/{$name}/": [
+                "type:wordpress-theme"
+            ]
+        }
+    }
+}
