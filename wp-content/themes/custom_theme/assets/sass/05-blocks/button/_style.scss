@@ -1,0 +1,19 @@
+/**
+ * Button
+ */
+// .site .button,
+// button,
+input[type="submit"],
+input[type="reset"]
+// .wp-block-search .wp-block-search__button,
+// .wp-block-button .wp-block-button__link,
+// .wp-block-file a.wp-block-file__button 
+{
+	// Extend button style
+	@include button-style();
+}
+
+
+button {
+	border-width: 0;
+}

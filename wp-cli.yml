@@ -6,12 +6,18 @@ apache_modules:
 rewrite structure:
   /%year%/%monthnum%/%postname%
 
+
+core download:
+  locale: it_IT
+
 language core is-installed:
   en_US
 language core install:
   en_US
+  it_IT
 language theme install:
   en_US
+  it_IT
 language plugin install:
   en_US
 site switch-language:

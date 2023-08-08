@@ -1,0 +1,18 @@
+/* Block Alignments */
+
+.is-style-inline {
+    display: inline-flex !important;
+	&-right {
+		float: right;
+    	clear: both;
+	}
+}
+
+
+.desktop-only {
+	display: none !important;
+
+	@include media(mobile) {
+		display: block !important;
+	}
+}

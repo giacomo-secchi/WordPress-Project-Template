@@ -1,0 +1,94 @@
+/**
+ * Accordion
+ */
+
+/* Accordion */
+.accordion-section {
+	border-bottom: 1px solid #dcdcde;
+	margin: 1em 0 0 0;
+}
+
+.accordion-section.open .accordion-section-content,
+.no-js .accordion-section .accordion-section-content {
+	display: block;
+}
+
+.accordion-section.open:hover {
+	border-bottom-color: #dcdcde;
+}
+
+.accordion-section-content {
+	display: none;
+	padding: 10px 20px 15px;
+	overflow: hidden;
+	background: #fff;
+}
+
+.accordion-section-title {
+	margin: 0;
+	padding: 12px 15px 15px;
+	position: relative;
+	border-left: 1px solid #dcdcde;
+	border-right: 1px solid #dcdcde;
+	-webkit-user-select: none;
+	user-select: none;
+	background-color: var(--wp--preset--color--white);
+}
+
+.js .accordion-section-title {
+	cursor: pointer;
+}
+
+.js .accordion-section-title:after {
+	position: absolute;
+	top: 12px;
+	right: 10px;
+	z-index: 1;
+}
+
+.accordion-section-title:focus {
+	/* Only visible in Windows High Contrast mode */
+	outline: 1px solid transparent;
+}
+
+.accordion-section-title:hover:after,
+.accordion-section-title:focus:after {
+	border-color: #a7aaad transparent;
+	/* Only visible in Windows High Contrast mode */
+	outline: 1px solid transparent;
+}
+
+.cannot-expand .accordion-section-title {
+	cursor: auto;
+}
+
+.cannot-expand .accordion-section-title:after {
+	display: none;
+}
+
+.control-section .accordion-section-title,
+.customize-pane-child .accordion-section-title {
+	border-left: none;
+	border-right: none;
+	padding: 10px 10px 11px 14px;
+	line-height: 1.55;
+	background: #fff;
+}
+
+.control-section .accordion-section-title:after,
+.customize-pane-child .accordion-section-title:after {
+	top: calc(50% - 10px); /* Arrow height is 20px, so use half of that to vertically center */
+}
+
+.js .control-section:hover .accordion-section-title,
+.js .control-section .accordion-section-title:hover,
+.js .control-section.open .accordion-section-title,
+.js .control-section .accordion-section-title:focus {
+	color: #1d2327;
+	background: #f6f7f7;
+}
+
+.control-section.open .accordion-section-title {
+	/* When expanded */
+	border-bottom: 1px solid #dcdcde;
+}

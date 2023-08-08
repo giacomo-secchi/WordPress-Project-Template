@@ -1,0 +1,23 @@
+/**
+ * Yoast Estimated Reading Time
+ */
+/**
+ * Responsive Styles
+ */
+/**
+ * Required Variables
+ */
+.single-post main {
+  position: relative;
+}
+
+@media only screen and (min-width: 822px) {
+  .yoast-reading-time__wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-50%, 12em);
+  }
+}
+
+/*# sourceMappingURL=reading-time.css.map */

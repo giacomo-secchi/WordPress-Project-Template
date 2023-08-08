@@ -1,0 +1,19 @@
+/**
+ * Yoast Estimated Reading Time
+ */
+
+ @import "03-generic/breakpoints";
+ 
+.single-post main {
+    position: relative;
+} 
+
+.yoast-reading-time__wrapper {
+
+    @include media(desktop) {
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-50%, 12em);
+	}
+}

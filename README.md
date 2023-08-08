@@ -1,4 +1,4 @@
-# WordPress Website.
+# WordPress Custom Template.
 
 ## Development
 Si sviluppa in genere sul branch development che deve sempre essere allineato al branch master.
@@ -33,7 +33,7 @@ caricare il plugin zippato nella cartella zip e aggiungere al file **`composer.j
                 "name": "autore-plugin/nome-cartella-plugin",
                 "version": "numero.versione.plugin",
                 "dist": {
-                    "url": "wp-content/artifact/nome-cartella.zip",
+                    "url": "wp-content/artifact/nome-plugin.zip",
                     "type": "zip"
                 },
                 "type": "wordpress-plugin"

@@ -1,0 +1,9 @@
+// Site footer
+.site-footer {
+    @include media(mobile) {
+        .wp-block-navigation__container {
+            flex-direction: row;
+        }
+    }
+    
+}

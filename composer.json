@@ -10,18 +10,6 @@
                 "wpackagist-plugin/*",
                 "wpackagist-theme/*"
             ]
-        },
-        {
-            "type": "package",
-            "package": {
-                "name": "yoast/wordpress-seo-premium",
-                "version": "19.7",
-                "dist": {
-                    "url": "wp-content/artifact/wordpress-seo-premium_v19.7n.zip",
-                    "type": "zip"
-                },
-                "type": "wordpress-plugin"
-            }
         }
     ],
     "config": {
@@ -47,6 +35,14 @@
         "wpackagist-plugin/jetpack-boost": "^1.6",
         "wpackagist-plugin/mailin": "^3.1",
         "wpackagist-plugin/redirection": "^5.3",
+        "wpackagist-plugin/sensei-certificates": "^2.2",
+        "wpackagist-plugin/sensei-course-progress": "^2.0",
+        "wpackagist-plugin/sensei-media-attachments": "^2.0",
+        "wpackagist-plugin/translatepress-multilingual": "^2.3",
+        "wpackagist-plugin/w3-total-cache": "^2.2",
+        "wpackagist-plugin/woo-gutenberg-products-block": "^8.2",
+        "wpackagist-plugin/woocommerce": "^6.7",
+        "wpackagist-plugin/woocommerce-gateway-stripe": "^6.5",
         "wpackagist-plugin/wordpress-seo": "^19.14",
         "wpackagist-theme/twentytwentythree": "^1.0"
     },

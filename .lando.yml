@@ -1,4 +1,4 @@
-name: personal-blog
+name: wordpress-template
 recipe: wordpress
 config:
   php: '7.4'
@@ -9,9 +9,9 @@ config:
     php: config/php.ini
 excludes:
   - vendor
-  # - wordpress
+  - wordpress
   - wp-content/plugins
-  # - wp-content/themes/custom-theme/node_modules
+  - wp-content/themes/custom_theme/node_modules
 services:
   appserver:
     build:
@@ -29,8 +29,8 @@ services:
     overrides:
       environment:
         SHELL: /bin/bash
-    # run:
-    #   - cd $LANDO_MOUNT/wp-content/themes/custom-theme && npm install && npm start
+    run:
+      - cd $LANDO_MOUNT/wp-content/themes/custom_theme && npm install && npm start
 tooling:
   npm:
     service: node

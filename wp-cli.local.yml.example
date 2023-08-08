@@ -7,10 +7,10 @@ core install:
 
 # Subcommand defaults (e.g. `wp config create`)
 theme is-active:
-  custom-theme
+  custom_theme
 theme activate:
-  custom-theme
-
+  custom_theme
+  
 @staging:
     ssh: user@ipaddressordomain:port/path/to/website/folder/public_html
 

@@ -14,21 +14,23 @@ wordpress/
 node_modules/
 build/
 
+/wp-content/cache/*
 /wp-content/languages/*
 /wp-content/mu-plugins/*
 /wp-content/plugins/*
 /wp-content/themes/*
 /wp-content/uploads
-/wp-content/cache
+/wp-content/w3tc-config/*
 
 /wp-salts/*
 !*-sample.*
 
 /wp-content/advanced-cache.php
-/wp-content/wp-cache-config.php
+/wp-content/db.php
+/wp-content/object-cache.php
 
 !/wp-content/mu-plugins/my-custom-functions
 !/wp-content/mu-plugins/load.php
-!/wp-content/themes/custom-theme
+!/wp-content/themes/custom_*
 
 !/wp-content/**/index.php

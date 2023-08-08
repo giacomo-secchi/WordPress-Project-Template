@@ -1,0 +1,47 @@
+@import "03-generic/breakpoints";
+
+.wp-block-jetpack-slideshow {
+
+ 	 
+
+
+
+	.wp-block-jetpack-slideshow_slide {
+		figure {
+			flex-wrap: wrap;
+			align-content: flex-start;		
+		}
+
+		.break {
+			flex-basis: 100%;
+			height: 0;
+		}
+
+		.wp-block-jetpack-slideshow_image {
+			border-radius: 100%;
+		}
+
+		blockquote {
+ 
+
+			@include media(tablet) {
+				inline-size: 50%;
+				overflow-wrap: break-word;
+				hyphens: manual;
+				text-align: left;
+			}		
+		} 
+	}
+
+	.wp-block-jetpack-slideshow_button-prev,
+	.wp-block-jetpack-slideshow_button-next {
+		border-radius: 100%;
+		background-color: var(--wp--preset--color--orange);
+	}
+	
+	.wp-block-jetpack-slideshow_pagination {
+		&.swiper-pagination-bullets {
+			display: none;
+		}
+	}
+}
